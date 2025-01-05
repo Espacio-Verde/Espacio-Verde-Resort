@@ -444,19 +444,19 @@ svg.dark-color {
 }
 
 svg.color {
-  color: #ECB27B;
+  color: #8bc53f;
 }
 
 svg.primary-color {
-  color: var(--primary-color);
+  color:#8bc53f;/* var(--primary-color)*/
 }
 
 svg.social {
-  color: #ECB27B;
+  color: #8bc53f;
 }
 
 svg.social:hover {
-  color: var(--primary-color);
+  color: #8bc53f;/*var(--primary-color);*/
 }
 
 
@@ -471,13 +471,13 @@ svg.social:hover {
 }
 
 .room-pagination .swiper-pagination-bullet {
-  width: 18px;
-  height: 18px;
-  background-color: var(--primary-color);
+  width: 15px;
+  height: 15px;
+  background-color: rgb(87, 212, 97);
 }
 
 .room-pagination .swiper-pagination-bullet-active {
-  background-color: var(--primary-color);
+  background-color: rgb(87, 212, 97); /*var(--primary-color);*/
 }
 
 /* gallery */
@@ -486,25 +486,18 @@ svg.social:hover {
   opacity: .35;
   cursor: auto;
   pointer-events: none;
+
+  
+}
+#room{
+width: 90%;      /* Set the width of this section to 80% of its container */
+/* height: auto;    Let the height adjust automatically based on content */
+margin: 0 auto;  /* Center the section horizontally */
+
+padding-top: 10px;  /* Reduce the padding on the top */
+padding-bottom: 10px;  /* Reduce the padding on the bottom */
 }
 
-
-/* modal video override
-------------------------------------------------------------- */
-.modal-dialog {
-  max-width: 800px;
-  margin: auto;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.modal-content {
-  padding: 0;
-  background-color: #f5f3ef;
-  border: none;
-  border-radius: 0
-}
 
 
 /* Preloader
@@ -530,7 +523,7 @@ svg.social:hover {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #D16806;
+  border-top-color: #8bc53f;/*#D16806*/
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -640,6 +633,9 @@ a.nav-link:hover {
     padding: 15px 0 15px 0 !important;
   }
 }
+.d-flex rounded-5{
+  filter: brightness(50%); /* Makes the image darker */
+}
 
 
 /* 4.2 Billboard
@@ -701,6 +697,14 @@ div.datetime-container button span.month-day {
   }
 }
 
+#about-us{
+  width: 90%;      /* Set the width of this section to 80% of its container */
+  /* height: auto;    Let the height adjust automatically based on content */
+  margin: 0 auto;  /* Center the section horizontally */
+  
+  padding-top: 10px;  /* Reduce the padding on the top */
+  padding-bottom: 10px;  /* Reduce the padding on the bottom */
+}
 
 /* 4.3 Rooms Section
 /*----------------------------------------------*/
@@ -739,7 +743,7 @@ div.datetime-container button span.month-day {
 /*----------------------------------------------*/
 
 .service {
-  border: 1px solid #F4E2D8;
+  border: 1px solid #8bc53f;/*#F4E2D8*/
   transition: all 0.3s ease-in-out;
 }
 
@@ -765,10 +769,6 @@ div.datetime-container button span.month-day {
 }
 
 
-/*----------------------------------------------*/
-/* 5 PAGES STYLE */
-/*----------------------------------------------*/
-
 /*--------------------------------------------------------------
 5.1 About page 
 --------------------------------------------------------------*/
@@ -793,19 +793,6 @@ svg.play-icon {
 }
 
 /*--------------------------------------------------------------
-  5.2 Blog page 
-  --------------------------------------------------------------*/
-.pagination {
-  --bs-pagination-color: var(--black-color);
-  --bs-pagination-hover-color: #fff;
-  --bs-pagination-hover-bg: var(--primary-color);
-  --bs-pagination-hover-border-color: var(--primary-color);
-  --bs-pagination-focus-color: #fff;
-  --bs-pagination-focus-bg: var(--primary-color);
-  --bs-pagination-focus-box-shadow: none;
-  --bs-pagination-active-bg: var(--primary-color);
-  --bs-pagination-active-border-color: var(--primary-color);
-}
 
 
 /*--------------------------------------------------------------
